@@ -1,169 +1,317 @@
-.awesome-links[href]:before
-{ font-family: "Font Awesome"; }
+/*!
+ * Awesome Links ~ https://github.com/kernc/awesome-links.css/
+ */
 
-.awesome-links[rel~=external]:before
-{ content:''; color: light-blue }
+.awesome-links a[href] {
+  white-space:nowrap;
+}
+.awesome-links a[href]:before {
+  font-family: FontAwesome, "Font Awesome";
+  font-weight: normal !important;
+  margin: 0 .2em 0 .1em;
+  text-decoration: none;
+  display: inline-block;
+}
 
-.awesome-links[target~=_blank]:before
-{ content: ''; color: light-blue }
-
-.awesome-links[href*=.gov.]:before
-{ content:''; color:grey }
-
-.awesome-links[href*=.edu.]:before,
-.awesome-links[href*=.ac.]:before
-{ content:''; color:black }
-
-.awesome-links[href*=.fb.com/]:before,
-.awesome-links[href*=.facebook.com/]:before,
-.awesome-links[href*=://on.fb.me/]:before
-{ content:''; color:dark-blue }
-
-.awesome-links[href*=://t.co/]:before,
-.awesome-links[href*=://twitter.com/]:before
-{ content:''; color:cyan }
-
-.awesome-links[href*=://youtu.be/]:before,
-.awesome-links[href*=.youtube.com/]:before
-{ content:''; color:red }
-
-.awesome-links[href*=.wikipedia.org/wiki/]:before
-{ content:''; color: black }
 /*
-{ content:url(http://www.google.com/s2/favicons?domain=wikipedia.org); font:normal 400 110% "Linux Libertine", "Times New Roman", times, serif }
-{ content:'W'; font:normal 400 110% "Linux Libertine", "Times New Roman", times, serif }
-*/
+ *
+ * Less specific first
+ *
+ */
 
-.awesome-links[href*=://github.com/]:before
-{ content:''; color:black }
+/* fa-globe */
+.awesome-links a[rel~="external"]:before
+{ content:'\f0ac'; color:cornflowerblue }
 
-.awesome-links[href*=.bitbucket.com]:before
-{ content:''; color:#258 }
+/* fa-external-link */
+  .awesome-links a[target~="_blank"]:before
+, .awesome-links a[rel~="nofollow"]:before
+{ content: '\f08e'; color:cornflowerblue }
 
-.awesome-links[href*=.stackoverflow.com]:before
-{ content:''; color:#f71 }
+/* university */
+  .awesome-links a[href*=".gov/"]:before
+, .awesome-links a[href*=".gov."]:before
+{ content:'\f19c'; color:grey }
 
-.awesome-links[href*=.stackexchange.]:before
-{ content:''; color:#259 }
+/* fa-graduation-cap */
+  .awesome-links a[href*=".edu/"]:before
+, .awesome-links a[href*=".edu."]:before
+, .awesome-links a[href*=".ac/"]:before
+, .awesome-links a[href*=".ac."]:before
+{ content:'\f19d'; color:#333 }
 
-.awesome-links[href*=.google.]:before
-{ content:''; color:light-blue }
 
-.awesome-links[href*=://goo.gl/maps/]:before,
-.awesome-links[href*=://maps.]:before,
-.awesome-links[href*=.google.][href*=/maps/]:before,
-.awesome-links[href*=.openstreetmap.org]:before
-{ content:''; color:red }
+/*
+ *
+ * Brand sites
+ *
+ */
 
-.awesome-links[href*=.apple.com]:before
-{ content:''; color: black }
+/*
+ * From favicon
+ */
 
-.awesome-links[href*=.amazon.]:before,
-.awesome-links[href*=.amzn.to]:before
-{ content:''; color: black }
+.awesome-links a[href*="flickr.com"]:before
+{ content:url(https://www.google.com/s2/favicons?domain=flickr.com) }
 
-.awesome-links[href*=.vimeo.com]:before
-{ content:''; color: #2be }
+.awesome-links a[href*="instagram.com"]:before
+, .awesome-links a[href*="instagr.am"]:before
+{ content:url(https://www.google.com/s2/favicons?domain=instagram.com) }
 
-.awesome-links[href*=.linkedin.com]:before
-{ content:''; color: #07b }
+.awesome-links a[href*=".google."]:before
+{ content:url(https://www.google.com/s2/favicons?domain=google.com) }
 
-.awesome-links[href*=.dropbox.com]:before
-{ content:''; color: #07e }
+/*
+ * General
+ */
 
-.awesome-links[href*=.phoronix.com]:before,
-.awesome-links[href*=.linuxvoice.com]:before,
-.awesome-links[href*=.askubuntu.com]:before,
-.awesome-links[href*=.archlinux.org]:before,
-.awesome-links[href*=.lkml.org]:before
-{ content:''; color: black }
+/* fa-linux */
+  .awesome-links a[href*="phoronix.com"]:before
+, .awesome-links a[href*="askubuntu.com"]:before
+, .awesome-links a[href*="lkml.org"]:before
+, .awesome-links a[href*="linux"]:before
+{ content:'\f17c'; color:black }
 
-.awesome-links[href$=.zip]:before,
-.awesome-links[href$=.rar]:before,
-.awesome-links[href$=.7z]:before,
-.awesome-links[href$=.tar.gz]:before,
-.awesome-links[href$=.tar.bz2]:before
-{ content:''; color:brown }
+/* fa-wikipedia-w */
+.awesome-links a[href*="wikipedia.org"]:before
+{ content:'\f266'; border:1px solid #aaa; color:black }
 
-.awesome-links[href$=.mp3]:before,
-.awesome-links[href$=.wav]:before,
-.awesome-links[href$=.ogg]:before,
-.awesome-links[href$=.wma]:before,
-.awesome-links[href$=.fla]:before,
-.awesome-links[href$=.flac]:before
-{ content:''; color:gold }
+/* fa-dropbox */
+.awesome-links a[href*="dropbox.com"]:before
+{ content:'\f16b'; color: #07e }
 
-.awesome-links[href$=.c]:before,
-.awesome-links[href$=.h]:before,
-.awesome-links[href$=.cpp]:before,
-.awesome-links[href$=.cc]:before,
-.awesome-links[href$=.py]:before,
-.awesome-links[href$=.rb]:before,
-.awesome-links[href$=.js]:before,
-.awesome-links[href$=.css]:before,
-.awesome-links[href$=.java]:before,
-.awesome-links[href$=.pl]:before,
-.awesome-links[href$=.sh]:before,
-.awesome-links[href$=.clj]:before,
-.awesome-links[href$=.cl]:before,
-.awesome-links[href$=.xml]:before,
-.awesome-links[href$=.m]:before,
-.awesome-links[href$=.cs]:before,
-.awesome-links[href$=.sql]:before,
-.awesome-links[href$=.asm]:before,
-.awesome-links[href$=.d]:before,
-.awesome-links[href$=.as]:before,
-.awesome-links[href$=.lua]:before
-{ content:'': color:grey }
+/* fa-windows */
+  .awesome-links a[href*=".microsoft"]:before
+, .awesome-links a[href*=".live.com"]:before
+, .awesome-links a[href*=".windows.com"]:before
+{ content:'\f17a'; color:#0bf }
 
-.awesome-links[href$=.ods]:before,
-.awesome-links[href$=.xls]:before,
-.awesome-links[href$=.xlsx]:before
-{ content:''; color:green }
 
-.awesome-links[href$=.odp]:before,
-.awesome-links[href$=.ppt]:before,
-.awesome-links[href$=.pptx]:before
-{ content:''; color:orange; }
+/*
+ * Social
+ */
 
-.awesome-links[href$=.odt]:before,
-.awesome-links[href$=.doc]:before,
-.awesome-links[href$=.docx]:before
-{ content:''; color:blue }
+/* fa-facebook-official */
+  .awesome-links a[href*="facebook.com/"]:before
+, .awesome-links a[href*="fb.me/"]:before
+{ content:'\f230'; color:#359 }
 
-.awesome-links[target=_blank][href$=.png]:before,
-.awesome-links[target=_blank][href$=.jpg]:before,
-.awesome-links[target=_blank][href$=.gif]:before
-{ content:''; color:yellow }
+/* fa-twitter */
+  .awesome-links a[href*="/t.co/"]:before
+, .awesome-links a[href*="twitter.com/"]:before
+{ content:'\f099'; color:#5ae }
 
-.awesome-links[href$=.ogv]:before,
-.awesome-links[href$=.flv]:before,
-.awesome-links[href$=.mp4]:before,
-.awesome-links[href$=.avi]:before,
-.awesome-links[href$=.mov]:before,
-.awesome-links[href$=.mpeg]:before,
-.awesome-links[href$=.wmv]:before
-{ content:''; color:dark-blue }
+/* fa-google-plus-square */
+.awesome-links a[href*="/plus.google.com/"]:before
+{ content:'\f0d4'; color:#d44 }
 
-.awesome-links[href$=.pdf]:before
-{ content:''; color:red }
+/* fa-tumblr-square */
+.awesome-links a[href*="tumblr.com"]:before
+{ content:'\f174'; color:#346 }
 
-.awesome-links[href$=.txt]:before,
-.awesome-links[href$=.csv]:before,
-.awesome-links[href$=.tsv]:before,
-.awesome-links[href$=.ini]:before,
-.awesome-links[href$=.cfg]:before,
-.awesome-links[href$=.conf]:before
-{ content:''; font-weight:bold }
+/* fa-reddit-square */
+.awesome-links a[href*="reddit.com"]:before
+{ content:'\f1a2'; color:#69f }
 
-.awesome-links[href$=.exe]:before,
-.awesome-links[href$=.bin]:before,
-.awesome-links[href$=.run]:before,
-.awesome-links[href$=.torrent]:before
-{ content:''; color:green }
+/* fa-linkedin-square */
+  .awesome-links a[href*="linkedin.com"]:before
+, .awesome-links a[href*="slideshare.net"]:before
+{ content:'\f08c'; color:#07b }
 
-.awesome-links[href^=mailto:]:before
-{ content:''; color:cream }
+/*
+ * Audio/Video sites
+ */
 
-.awesome-links[href^=tel:]:before
-{ content:''; color:green }
+/* fa-youtube-play */
+  .awesome-links a[href*="/youtu.be/"]:before
+, .awesome-links a[href*="youtube.com"]:before
+{ content:'\f16a'; color:#c22 }
+
+/* fa-vimeo */
+.awesome-links a[href*="vimeo.com"]:before
+{ content:'\f27d'; color:#2be }
+
+/* fa-soundcloud */
+.awesome-links a[href*="soundcloud.com"]:before
+{ content:'\f1be'; color:#f70 }
+
+/*
+ * Programming-related
+ */
+
+/* fa-github */
+.awesome-links a[href*="github.com"]:before
+{ content:'\f09b'; color:black }
+
+/* fa-bitbucket */
+.awesome-links a[href*="bitbucket.com"]:before
+{ content:'\f171'; color:#258 }
+
+/* fa-stack-overflow */
+.awesome-links a[href*="stackoverflow.com"]:before
+{ content:'\f16c'; color:#f71 }
+
+/* fa-stack-exchange */
+.awesome-links a[href*="stackexchange.com"]:before
+{ content:'\f18d'; color:#259 }
+
+/* fa-jsfiddle */
+.awesome-links a[href*="jsfiddle.net"]:before
+{ content:'\f1cc'; color:#47a }
+
+/* fa-y-combinator */
+.awesome-links a[href*="//news.ycombinator.com"]:before
+{ content:'\f23b'; color:#f60 }
+
+/*
+ * Shopping
+ */
+
+/* fa-apple */
+  .awesome-links a[href*="apple.com/"]:before
+, .awesome-links a[href*="/apple.co/"]:before
+{ content:'\f179'; color:#888 }
+
+/* fa-amazon */
+  .awesome-links a[href*="amazon."]:before
+, .awesome-links a[href*="amzn.to"]:before
+{ content:'\f270'; color:black }
+
+/* fa-steam */
+  .awesome-links a[href*="steampowered."]:before
+, .awesome-links a[href*="steamcommunity."]:before
+{ content:'\f1b6'; color:#666 }
+
+/* fa-android */
+  .awesome-links a[href*="play.google.com/store/apps"]:before
+{ content:'\f17b'; color:green }
+
+/*
+ *
+ * File types
+ *
+ */
+
+/* fa-download */
+  .awesome-links a[href$=".exe"]:before
+, .awesome-links a[href$=".dmg"]:before
+, .awesome-links a[href$=".bin"]:before
+, .awesome-links a[href$=".run"]:before
+, .awesome-links a[href$=".torrent"]:before
+{ content:'\f019'; color:green }
+
+/* fa-file-text-o */
+  .awesome-links a[href$=".txt"]:before
+, .awesome-links a[href$=".csv"]:before
+, .awesome-links a[href$=".tsv"]:before
+, .awesome-links a[href$=".ini"]:before
+, .awesome-links a[href$=".cfg"]:before
+, .awesome-links a[href$=".conf"]:before
+{ content:'\f0f6'; font-weight:bold }
+
+/* fa-file-pdf-o */
+.awesome-links a[href$=".pdf"]:before
+{ content:'\f1c1'; color:red }
+
+/* fa-file-word-o */
+  .awesome-links a[href$=".odt"]:before
+, .awesome-links a[href$=".doc"]:before
+, .awesome-links a[href$=".docx"]:before
+{ content:'\f1c2'; color:blue }
+
+/* fa-file-excel-o */
+  .awesome-links a[href$=".ods"]:before
+, .awesome-links a[href$=".xls"]:before
+, .awesome-links a[href$=".xlsx"]:before
+{ content:'\f1c3'; color:green }
+
+/* fa-file-powerpoint-o */
+  .awesome-links a[href$=".odp"]:before
+, .awesome-links a[href$=".ppt"]:before
+, .awesome-links a[href$=".pptx"]:before
+{ content:'\f1c4'; color:orange }
+
+/* fa-file-image-o */
+/* TODO: When CSS4 is prime, replace with:
+ *       .awesome-links a[href$=".png"]:not(:has(img))
+ */
+  .awesome-links a[target="_blank"][href$=".png"]:before
+, .awesome-links a[target="_blank"][href$=".jpg"]:before
+, .awesome-links a[target="_blank"][href$=".gif"]:before
+{ content:'\f1c5'; color:green }
+
+/* fa-file-archive-o */
+  .awesome-links a[href$=".zip"]:before
+, .awesome-links a[href$=".rar"]:before
+, .awesome-links a[href$=".7z"]:before
+, .awesome-links a[href$=".tar.gz"]:before
+, .awesome-links a[href$=".tar.bz2"]:before
+{ content:'\f1c6'; color:purple }
+
+/* fa-file-audio-o */
+  .awesome-links a[href$=".mp3"]:before
+, .awesome-links a[href$=".wav"]:before
+, .awesome-links a[href$=".ogg"]:before
+, .awesome-links a[href$=".wma"]:before
+, .awesome-links a[href$=".fla"]:before
+, .awesome-links a[href$=".flac"]:before
+{ content:'\f1c7'; color:darkgoldenrod }
+
+/* fa-file-video-o */
+  .awesome-links a[href$=".ogv"]:before
+, .awesome-links a[href$=".flv"]:before
+, .awesome-links a[href$=".mp4"]:before
+, .awesome-links a[href$=".avi"]:before
+, .awesome-links a[href$=".mov"]:before
+, .awesome-links a[href$=".mpeg"]:before
+, .awesome-links a[href$=".wmv"]:before
+{ content:'\f1c8'; color:dark-blue }
+
+/* fa-file-code-o */
+  .awesome-links a[href$=".c"]:before
+, .awesome-links a[href$=".h"]:before
+, .awesome-links a[href$=".cpp"]:before
+, .awesome-links a[href$=".cc"]:before
+, .awesome-links a[href$=".py"]:before
+, .awesome-links a[href$=".rb"]:before
+, .awesome-links a[href$=".js"]:before
+, .awesome-links a[href$=".css"]:before
+, .awesome-links a[href$=".java"]:before
+, .awesome-links a[href$=".pl"]:before
+, .awesome-links a[href$=".sh"]:before
+, .awesome-links a[href$=".clj"]:before
+, .awesome-links a[href$=".cl"]:before
+, .awesome-links a[href$=".xml"]:before
+, .awesome-links a[href$=".m"]:before
+, .awesome-links a[href$=".cs"]:before
+, .awesome-links a[href$=".sql"]:before
+, .awesome-links a[href$=".asm"]:before
+, .awesome-links a[href$=".d"]:before
+, .awesome-links a[href$=".as"]:before
+, .awesome-links a[href$=".lua"]:before
+{ content:'\f1c9'; color:black }
+
+/*
+ *
+ * Most specific last
+ *
+ */
+
+/* fa-map-marker */
+  .awesome-links a[href*="goo.gl/maps"]:before
+, .awesome-links a[href*="/maps."]:before
+, .awesome-links a[href*="google."][href*="/maps/"]:before
+, .awesome-links a[href*="openstreetmap.org"]:before
+{ content:'\f041'; color:red }
+
+/* fa-envelope-o */
+.awesome-links a[href^="mailto:"]:before
+{ content:'\f003'; color:#444 }
+
+/* fa-phone-square */
+.awesome-links a[href^="tel:"]:before
+{ content:'\f098'; color:green }
+
+/* fa-btc */
+.awesome-links a[href^="bitcoin:"]:before
+{ content:'\f15a'; transform:rotate(20deg); color:#f60 }

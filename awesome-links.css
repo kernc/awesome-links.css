@@ -198,6 +198,7 @@
 , .awesome-links a[href$=".bin"]:before
 , .awesome-links a[href$=".run"]:before
 , .awesome-links a[href$=".torrent"]:before
+, .awesome-links a[href*="drive.google.com/open"]:before
 { content:'\f019'; color:green }
 
 /* fa-file-text-o */
@@ -217,18 +218,21 @@
   .awesome-links a[href$=".odt"]:before
 , .awesome-links a[href$=".doc"]:before
 , .awesome-links a[href$=".docx"]:before
+, .awesome-links a[href*="docs.google.com/document"]:before
 { content:'\f1c2'; color:blue }
 
 /* fa-file-excel-o */
   .awesome-links a[href$=".ods"]:before
 , .awesome-links a[href$=".xls"]:before
 , .awesome-links a[href$=".xlsx"]:before
+, .awesome-links a[href*="docs.google.com/spreadsheet"]:before
 { content:'\f1c3'; color:green }
 
 /* fa-file-powerpoint-o */
   .awesome-links a[href$=".odp"]:before
 , .awesome-links a[href$=".ppt"]:before
 , .awesome-links a[href$=".pptx"]:before
+, .awesome-links a[href*="docs.google.com/presentation"]:before
 { content:'\f1c4'; color:orange }
 
 /* fa-file-image-o */

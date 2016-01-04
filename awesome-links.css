@@ -1,0 +1,169 @@
+.awesome-links[href]:before
+{ font-family: "Font Awesome"; }
+
+.awesome-links[rel~=external]:before
+{ content:''; color: light-blue }
+
+.awesome-links[target~=_blank]:before
+{ content: ''; color: light-blue }
+
+.awesome-links[href*=.gov.]:before
+{ content:''; color:grey }
+
+.awesome-links[href*=.edu.]:before,
+.awesome-links[href*=.ac.]:before
+{ content:''; color:black }
+
+.awesome-links[href*=.fb.com/]:before,
+.awesome-links[href*=.facebook.com/]:before,
+.awesome-links[href*=://on.fb.me/]:before
+{ content:''; color:dark-blue }
+
+.awesome-links[href*=://t.co/]:before,
+.awesome-links[href*=://twitter.com/]:before
+{ content:''; color:cyan }
+
+.awesome-links[href*=://youtu.be/]:before,
+.awesome-links[href*=.youtube.com/]:before
+{ content:''; color:red }
+
+.awesome-links[href*=.wikipedia.org/wiki/]:before
+{ content:''; color: black }
+/*
+{ content:url(http://www.google.com/s2/favicons?domain=wikipedia.org); font:normal 400 110% "Linux Libertine", "Times New Roman", times, serif }
+{ content:'W'; font:normal 400 110% "Linux Libertine", "Times New Roman", times, serif }
+*/
+
+.awesome-links[href*=://github.com/]:before
+{ content:''; color:black }
+
+.awesome-links[href*=.bitbucket.com]:before
+{ content:''; color:#258 }
+
+.awesome-links[href*=.stackoverflow.com]:before
+{ content:''; color:#f71 }
+
+.awesome-links[href*=.stackexchange.]:before
+{ content:''; color:#259 }
+
+.awesome-links[href*=.google.]:before
+{ content:''; color:light-blue }
+
+.awesome-links[href*=://goo.gl/maps/]:before,
+.awesome-links[href*=://maps.]:before,
+.awesome-links[href*=.google.][href*=/maps/]:before,
+.awesome-links[href*=.openstreetmap.org]:before
+{ content:''; color:red }
+
+.awesome-links[href*=.apple.com]:before
+{ content:''; color: black }
+
+.awesome-links[href*=.amazon.]:before,
+.awesome-links[href*=.amzn.to]:before
+{ content:''; color: black }
+
+.awesome-links[href*=.vimeo.com]:before
+{ content:''; color: #2be }
+
+.awesome-links[href*=.linkedin.com]:before
+{ content:''; color: #07b }
+
+.awesome-links[href*=.dropbox.com]:before
+{ content:''; color: #07e }
+
+.awesome-links[href*=.phoronix.com]:before,
+.awesome-links[href*=.linuxvoice.com]:before,
+.awesome-links[href*=.askubuntu.com]:before,
+.awesome-links[href*=.archlinux.org]:before,
+.awesome-links[href*=.lkml.org]:before
+{ content:''; color: black }
+
+.awesome-links[href$=.zip]:before,
+.awesome-links[href$=.rar]:before,
+.awesome-links[href$=.7z]:before,
+.awesome-links[href$=.tar.gz]:before,
+.awesome-links[href$=.tar.bz2]:before
+{ content:''; color:brown }
+
+.awesome-links[href$=.mp3]:before,
+.awesome-links[href$=.wav]:before,
+.awesome-links[href$=.ogg]:before,
+.awesome-links[href$=.wma]:before,
+.awesome-links[href$=.fla]:before,
+.awesome-links[href$=.flac]:before
+{ content:''; color:gold }
+
+.awesome-links[href$=.c]:before,
+.awesome-links[href$=.h]:before,
+.awesome-links[href$=.cpp]:before,
+.awesome-links[href$=.cc]:before,
+.awesome-links[href$=.py]:before,
+.awesome-links[href$=.rb]:before,
+.awesome-links[href$=.js]:before,
+.awesome-links[href$=.css]:before,
+.awesome-links[href$=.java]:before,
+.awesome-links[href$=.pl]:before,
+.awesome-links[href$=.sh]:before,
+.awesome-links[href$=.clj]:before,
+.awesome-links[href$=.cl]:before,
+.awesome-links[href$=.xml]:before,
+.awesome-links[href$=.m]:before,
+.awesome-links[href$=.cs]:before,
+.awesome-links[href$=.sql]:before,
+.awesome-links[href$=.asm]:before,
+.awesome-links[href$=.d]:before,
+.awesome-links[href$=.as]:before,
+.awesome-links[href$=.lua]:before
+{ content:'': color:grey }
+
+.awesome-links[href$=.ods]:before,
+.awesome-links[href$=.xls]:before,
+.awesome-links[href$=.xlsx]:before
+{ content:''; color:green }
+
+.awesome-links[href$=.odp]:before,
+.awesome-links[href$=.ppt]:before,
+.awesome-links[href$=.pptx]:before
+{ content:''; color:orange; }
+
+.awesome-links[href$=.odt]:before,
+.awesome-links[href$=.doc]:before,
+.awesome-links[href$=.docx]:before
+{ content:''; color:blue }
+
+.awesome-links[target=_blank][href$=.png]:before,
+.awesome-links[target=_blank][href$=.jpg]:before,
+.awesome-links[target=_blank][href$=.gif]:before
+{ content:''; color:yellow }
+
+.awesome-links[href$=.ogv]:before,
+.awesome-links[href$=.flv]:before,
+.awesome-links[href$=.mp4]:before,
+.awesome-links[href$=.avi]:before,
+.awesome-links[href$=.mov]:before,
+.awesome-links[href$=.mpeg]:before,
+.awesome-links[href$=.wmv]:before
+{ content:''; color:dark-blue }
+
+.awesome-links[href$=.pdf]:before
+{ content:''; color:red }
+
+.awesome-links[href$=.txt]:before,
+.awesome-links[href$=.csv]:before,
+.awesome-links[href$=.tsv]:before,
+.awesome-links[href$=.ini]:before,
+.awesome-links[href$=.cfg]:before,
+.awesome-links[href$=.conf]:before
+{ content:''; font-weight:bold }
+
+.awesome-links[href$=.exe]:before,
+.awesome-links[href$=.bin]:before,
+.awesome-links[href$=.run]:before,
+.awesome-links[href$=.torrent]:before
+{ content:''; color:green }
+
+.awesome-links[href^=mailto:]:before
+{ content:''; color:cream }
+
+.awesome-links[href^=tel:]:before
+{ content:''; color:green }

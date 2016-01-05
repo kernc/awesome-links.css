@@ -209,7 +209,7 @@
 , .awesome-links a[href$=".ini"]:before
 , .awesome-links a[href$=".cfg"]:before
 , .awesome-links a[href$=".conf"]:before
-{ content:'\f0f6'; font-weight:bold }
+{ content:'\f0f6'; color:#333 }
 
 /* fa-file-pdf-o */
 .awesome-links a[href$=".pdf"]:before

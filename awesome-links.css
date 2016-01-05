@@ -102,7 +102,7 @@
 { content:'\f099'; color:#5ae }
 
 /* fa-google-plus-square */
-.awesome-links a[href*="/plus.google.com/"]:before
+.awesome-links a[href*="google.com/+"]:before
 { content:'\f0d4'; color:#d44 }
 
 /* fa-tumblr-square */

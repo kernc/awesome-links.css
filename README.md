@@ -31,7 +31,7 @@ Simply add the following line(s) into your `<head>`:
 <!-- Ensure you have Font Awesome >= 4.4 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4/css/font-awesome.min.css" />
 <!-- Include Awesome Links stylesheet -->
-<link rel="stylesheet" href="awesome-links.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/awesome-links/1/awesome-links.min.css" />
 ```
 
 add `awesome-links` class to the the element(s) containing your articles:
@@ -52,7 +52,7 @@ Demo
 please see [the real demo here](https://kernc.github.io/awesome-links.css/).**
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4/css/font-awesome.min.css" />
-<link rel="stylesheet" href="awesome-links.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/awesome-links/1/awesome-links.min.css" />
 <style>body { width: 100%; max-width: 50em; margin: 2em auto; line-height: 1.3em }</style>
 
 [//]: # (This is works OK when converted with: kramdown -i GFM --coderay-line-numbers nil --no-hard-wrap README.md > index.html)

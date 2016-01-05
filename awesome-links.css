@@ -155,9 +155,10 @@
 .awesome-links a[href*="stackexchange.com"]:before
 { content:'\f18d'; color:#259 }
 
-/* fa-jsfiddle */
-.awesome-links a[href*="jsfiddle.net"]:before
-{ content:'\f1cc'; color:#47a }
+/* fa-code */
+  .awesome-links a[href*="jsfiddle.net"]:before
+, .awesome-links a[href*="codepen.io"]:before
+{ content:'\f121'; color:#111 }
 
 /* fa-y-combinator */
 .awesome-links a[href*="//news.ycombinator.com"]:before

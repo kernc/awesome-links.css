@@ -294,6 +294,7 @@
 , .awesome-links a[href$=".d"]:before
 , .awesome-links a[href$=".as"]:before
 , .awesome-links a[href$=".lua"]:before
+, .awesome-links a[href$="gist.github.com"]:before
 { content:'\f1c9'; color:black }
 
 /*

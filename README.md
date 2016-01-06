@@ -73,6 +73,7 @@ interesting [Wikipedia articles](https://en.wikipedia.org/wiki/Unix_philosophy);
 links to portfolios on [Flickr](https://www.flickr.com/photos/cmphoto/23811712059/)
 and [Instagram](https://www.instagram.com/p/_bTaThv-Q3/?taken-by=katyperry)
 (portfolios — LOL);
+various [Google links](https://www.google.com/contact/);
 links about [GNU/Linux](http://www.whylinuxisbetter.net/) or even
 [Microsoft](http://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_security/windows-10-is-malware/d8683bfb-2fef-4fc4-90e8-7656976b387d?auth=1)
 if you're into that sort of thing;

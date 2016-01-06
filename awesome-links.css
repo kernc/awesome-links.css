@@ -74,7 +74,7 @@
 
 /* fa-wikipedia-w */
 .awesome-links a[href*="wikipedia.org"]:before
-{ content:'\f266'; border:1px solid #aaa; color:black }
+{ content:'\f266'; font-size: 90%; padding:0 .1em; border:1px solid #aaa; color:black }
 
 /* fa-dropbox */
 .awesome-links a[href*="dropbox.com"]:before

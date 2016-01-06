@@ -185,7 +185,7 @@
 
 /* fa-android */
   .awesome-links a[href*="play.google.com/store/apps"]:before
-{ content:'\f17b'; color:green }
+{ content:'\f17b'; color:#8b3 }
 
 /*
  *

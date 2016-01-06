@@ -52,14 +52,14 @@
  */
 
 .awesome-links a[href*="flickr.com"]:before
-{ content:url(https://www.google.com/s2/favicons?domain=flickr.com) }
+{ content:url(https://www.google.com/s2/favicons?domain=flickr.com); vertical-align:middle }
 
 .awesome-links a[href*="instagram.com"]:before
 , .awesome-links a[href*="instagr.am"]:before
-{ content:url(https://www.google.com/s2/favicons?domain=instagram.com) }
+{ content:url(https://www.google.com/s2/favicons?domain=instagram.com); vertical-align:middle }
 
 .awesome-links a[href*=".google."]:before
-{ content:url(https://www.google.com/s2/favicons?domain=google.com) }
+{ content:url(https://www.google.com/s2/favicons?domain=google.com); vertical-align:middle }
 
 /*
  * General

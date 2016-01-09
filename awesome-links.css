@@ -270,7 +270,7 @@
 , .awesome-links a[href$=".mov"]:before
 , .awesome-links a[href$=".mpeg"]:before
 , .awesome-links a[href$=".wmv"]:before
-{ content:'\f1c8'; color:dark-blue }
+{ content:'\f1c8'; color:#400 }
 
 /* fa-file-code-o */
   .awesome-links a[href$=".c"]:before

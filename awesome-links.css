@@ -2,9 +2,6 @@
  * Awesome Links ~ https://github.com/kernc/awesome-links.css/
  */
 
-.awesome-links a[href] {
-  white-space:nowrap;
-}
 .awesome-links a[href]:before {
   font-family: FontAwesome, "Font Awesome";
   font-weight: normal !important;

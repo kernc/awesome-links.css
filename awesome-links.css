@@ -18,7 +18,7 @@
 
 /* fa-globe */
 .awesome-links a[rel~="external"]:before
-{ content:'\f0ac'; color:cornflowerblue }
+{ content:'\f0ac'; font-size: 90%; color:cornflowerblue }
 
 /* fa-external-link */
   .awesome-links a[target~="_blank"]:before
